@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:linkedin_mobile_ui/pages/auth/sign_in_page.dart';
-import 'package:linkedin_mobile_ui/pages/auth/sign_up_page.dart';
-import 'package:linkedin_mobile_ui/theme/styles.dart';
-import 'package:linkedin_mobile_ui/widgets/button_container_widget.dart';
-import 'package:linkedin_mobile_ui/widgets/google_button_container_widget.dart';
-
+import 'package:flutter_svg/svg.dart';
+import '../../theme/styles.dart';
+import '../../widgets/button_container_widget.dart';
+import '../../widgets/google_button_container_widget.dart';
+import '../auth/sign_in_page.dart';
+import '../auth/sign_up_page.dart';
 import 'on_boarding_entity.dart';
 
 
@@ -126,7 +125,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     onTap: () {
                       Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (_) => SignInPage()), (route) => false,);
                     },
-                    child: Text(
+                    child: const Text(
                       "Sign In",
                       style: TextStyle(
                           fontSize: 22,

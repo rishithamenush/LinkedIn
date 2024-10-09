@@ -1,11 +1,13 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:linkedin_mobile_ui/pages/auth/sign_in_page.dart';
-import 'package:linkedin_mobile_ui/pages/main/main_page/main_page.dart';
-import 'package:linkedin_mobile_ui/theme/styles.dart';
-
+import 'package:linkedin/page/auth/sign_in_page.dart';
+import '../../theme/styles.dart';
 import '../../widgets/button_container_widget.dart';
+import '../../widgets/google_button_container_widget.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../main/main_page/main_page.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key}) : super(key: key);
