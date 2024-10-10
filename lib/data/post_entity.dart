@@ -1,4 +1,3 @@
-
 class PostEntity {
   // * postId
   // * postImages
@@ -31,8 +30,8 @@ class PostEntity {
   static List<PostEntity> postListData = [
     PostEntity(
         userProfile: "profile_1.jpeg",
-        username: "John Doe",
-        userBio: "Full-Stack Flutter Developer, Firebase Expert | Youtuber | Blogger",
+        username: "Tharindu Perera",
+        userBio: "Full-Stack Flutter Developer, Firebase Expert | Youtuber | Blogger from Sri Lanka",
         createAt: "1w",
         description: "Some common mistakes that flutter developer make while learning flutter.",
         postImage: "post_image_1.jpg",
@@ -45,8 +44,8 @@ class PostEntity {
 
     PostEntity(
         userProfile: "profile_2.jpeg",
-        username: "Doug Stevenson",
-        userBio: "MERN-STACK Developer, REST APIs | Entrepreneur | Blogger",
+        username: "Amal Silva",
+        userBio: "MERN-STACK Developer, REST APIs | Entrepreneur | Blogger from Colombo",
         createAt: "1m",
         description: "Look at this javascript code I don't believe it what kind of people are living in this world haha",
         postImage: "post_image_2.jpg",
@@ -59,8 +58,8 @@ class PostEntity {
 
     PostEntity(
         userProfile: "profile_1.jpeg",
-        username: "Carig C. Watson",
-        userBio: "Software Developer at Google #GDE",
+        username: "Kasun Jayasekara",
+        userBio: "Software Developer at Google #GDE from Kandy",
         createAt: "2w",
         description: "Hey Folks!\nGoogle Devs. just released this new feature in Search Engine check it out.",
         postImage: "post_image_3.jpg",
@@ -73,8 +72,8 @@ class PostEntity {
 
     PostEntity(
         userProfile: "profile_2.jpeg",
-        username: "Diana Joe",
-        userBio: "UX/UI Researcher | Product Manager at IBM",
+        username: "Dilani Fernando",
+        userBio: "UX/UI Researcher | Product Manager at IBM from Galle",
         createAt: "4d",
         description: "Just look at this!\nthis man lost control and he's trying to find peace but unfortunately he's unable to find.",
         postImage: "post_image_4.jpg",
@@ -87,8 +86,8 @@ class PostEntity {
 
     PostEntity(
         userProfile: "profile_1.jpeg",
-        username: "Alexander Graham Bell",
-        userBio: "Inventor | Developer | Mobile Founder",
+        username: "Chathura Wijesinghe",
+        userBio: "Inventor | Developer | Mobile Founder from Colombo",
         createAt: "1d",
         description: "What's up people\nLook at this Alexander got something new to show you.",
         postImage: "post_image_5.jpg",
@@ -99,5 +98,4 @@ class PostEntity {
         totalReposts: 17
     ),
   ];
-
 }
