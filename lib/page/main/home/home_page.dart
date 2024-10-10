@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:linkedin/data/post_entity.dart';
 import 'package:linkedin/theme/styles.dart';
 
@@ -39,9 +40,72 @@ class _HomePageState extends State<HomePage> {
                         ),
                         const SizedBox(
                           width: 10,
+                        ),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  const Expanded(
+                                    child: Text(
+                                      "Rishitha Menusha",
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold
+                                      ),
+                                    ),
+                                  ),
+                                  GestureDetector(
+                                    onTap: (){
+                                    },
+                                    child: const Icon(Icons.more_vert),
+                                  )
+                                ],
+                              ),
+                              const Text(
+                                "Flutter Developer | Freelancer | Youtuber",
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                    fontSize: 12, color: linkedInMediumGrey86888A
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 2,
+                              ),
+                              const Row(
+                                children: [
+                                  Text(
+                                    "1w -",
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        color: linkedInMediumGrey86888A
+                                    ),
+                                  ),
+                                  Icon(
+                                    FontAwesomeIcons.earth,
+                                    size: 15,
+                                    color: linkedInMediumGrey86888A,
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+
+                        const SizedBox(
+                          height: 10,
                         )
                       ],
-                    )
+                    ),
                   ],
                 ),
               )
