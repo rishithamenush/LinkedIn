@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:linkedin/data/post_entity.dart';
+import 'package:linkedin/page/main/home/widgets/single_post_card_widget.dart';
 import 'package:linkedin/theme/styles.dart';
 
 class HomePage extends StatefulWidget {
@@ -24,15 +25,17 @@ class _HomePageState extends State<HomePage> {
             height: 8,
             color: linkedInLightGreyCACCCE,
           ),
-          // Expanded(
-          //   child: ListView.builder(
-          //     itemCount: postData.length,
-          //     itemBuilder: (context, index){
-          //       final post = postData[index];
-          //       return PostCardWidget(post: post);
-          //     },
-          //   ),
-          // )
+
+          Expanded(
+            child: ListView.builder(
+              itemCount: postData.length,
+              itemBuilder: (context, index){
+                final post = postData[index];
+                return SinglePostCardWidget(post: post);
+              },
+            ),
+          )
+
         ],
       ),
     );
