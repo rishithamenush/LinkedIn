@@ -90,7 +90,12 @@ class _MainPageState extends State<MainPage> {
         }
       case 2:
         {
-          return CreatePage();
+          return CreatePage(onCloneClickListener: () {
+            Navigator.pop(context);
+            setState(() {
+              _currentPageIndex = 0;
+            });
+          },);
         }
       case 3:
         {
