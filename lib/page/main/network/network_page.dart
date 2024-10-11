@@ -82,27 +82,7 @@ class _NetworkPageState extends State<NetworkPage> {
           const SizedBox(
             height: 15,
           ),
-
-          Card(
-            elevation: 3,
-            child: Stack(
-              children: [
-                Container(
-                  width: double.infinity,
-                  height: 80,
-                  decoration: const BoxDecoration(
-                    color: linkedInLightGreyCACCCE
-                  ),
-                  child: Image.asset("assets/bg_image_1.jpeg",fit: BoxFit.cover,),
-                ),
-                const SizedBox(height: 60,),
-                const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8.0),
-                  child: Text("Rishitha Menusha", maxLines: 1,overflow:TextOverflow,),
-                )
-              ],
-            ),
-          )
+          
         ],
       ),
     );
