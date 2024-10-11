@@ -8,7 +8,7 @@ import 'package:linkedin/page/main/network/network_page.dart';
 import 'package:linkedin/page/main/notifications/notifications_page.dart';
 import 'package:linkedin/theme/styles.dart';
 
-import '../widgets/app_bar_widget.dart';
+import 'widgets/app_bar_widget.dart';
 @override
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -24,7 +24,15 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      drawer: const Drawer(),
+      drawer:  Container(
+        width: 200,
+        color: Colors.white,
+        child: Column(
+          children: [
+            Text("Linkedin")
+          ],
+        ),
+      ),
       key: _scaffoldState,
       appBar: appBarWidget(
         context,
