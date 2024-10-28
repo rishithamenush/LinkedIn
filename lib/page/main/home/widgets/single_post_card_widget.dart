@@ -5,6 +5,8 @@ import 'package:linkedin/theme/styles.dart';
 
 import '../../../../data/post_entity.dart';
 
+
+
 class SinglePostCardWidget extends StatefulWidget {
   final PostEntity post;
   const SinglePostCardWidget({super.key, required this.post});
